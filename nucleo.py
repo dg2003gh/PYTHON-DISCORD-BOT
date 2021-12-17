@@ -1,4 +1,4 @@
-# DG2003-BOT-04.10.21
+# DG2003-BOT-17.12.21
 
 # *IMPORTS*.
 import discord
@@ -35,15 +35,15 @@ async def on_member_join(member):  # ENVIA MENSAGEM DE BOAS-VINDAS NO CANAL DO S
 
     embed = discord.Embed(
         description=f"{member.mention}, Entrou no servidor!😃 \n Seja muito bem-vindo!😁 \n 📚Digite:'ajuda para saber os"
-                    f"meus comandos.📚 \nPor favor, Leia as regras do servidor em {regrasmbv.mention}.",
+                    f" meus comandos.📚 \nPor favor, Leia as regras do servidor em {regrasmbv.mention}.",
         colour=16753920
     )
     embed.set_thumbnail(url="https://media3.giphy.com/media/6dSwtLb9q1UuA/giphy.gif?cid"
                             "=ecf05e47j5e7vnlawaoqa5ioi7jk13knwjdvg6dgqiykfkvx&rid=giphy.gif&ct=g")
-    arquivo = discord.File("feliz.gif", filename="feliz.gif")
-    embed.set_image(url="attachment://feliz.gif")
+    embed.set_image(url="https://media0.giphy.com/media/9o59Pga7BWlDrzWhhh/giphy.gif?cid"
+                        "=ecf05e47i4534lt8cmk8kq911vjd9syw67sx51m26lepynh5&rid=giphy.gif&ct=g")
 
-    await canal.send(embed=embed, file=arquivo)
+    await canal.send(embed=embed)
 
 
 # ----------------------------------------------------------------------------------------------------
@@ -195,12 +195,12 @@ async def hello(ctx):  # MANDA UMA PIADINHA COM HELLO WORLD KKKKKKK.
 @bot.command(aliases=["ver"])
 async def versão(ctx):
     embed = discord.Embed(
-        title="🤖 Versão: 04.10.21 \n"
+        title="🤖 Versão: 17.12.21 \n"
               "------------------------\n"
               "📑 Discord.py: 1.7.3 \n"
-              "🎞️ FFMPEG: 1.4 \n"
-              "🐍 Python: 3.9.5 \n"
-              "📹 YTDL: 2021.6.6 \n",
+              "🎞️ FFMPEG: 4.4.1 \n"
+              "🐍 Python: 3.10 \n"
+              "📹 YTDL: 2021.12.17 \n",
         color=16753920
     )
     await ctx.send(embed=embed)
