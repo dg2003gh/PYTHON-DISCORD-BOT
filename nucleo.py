@@ -199,7 +199,7 @@ async def versão(ctx):
               "------------------------\n"
               "📑 Discord.py: 1.7.3 \n"
               "🎞️ FFMPEG: 4.4.1 \n"
-              "🐍 Python: 3.10 \n"
+              "🐍 Python: 3.9.9 \n"
               "📹 YTDL: 2021.12.17 \n",
         color=16753920
     )
