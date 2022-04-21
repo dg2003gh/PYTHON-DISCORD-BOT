@@ -1,4 +1,4 @@
-# DG2003-BOT-17.12.21
+# DG2003-BOT-06.04.22
 
 # *IMPORTS*.
 import discord
@@ -63,9 +63,10 @@ async def ajuda(ctx):  # O COMANDO 'AJUDA LISTA OS COMANDOS DISPONÍVEIS.
                     "'versão: Mostra a versão do BOT,Python,YTDL,FFMPEG e Discord.py.\n"
                     "'ping: O Servidor fica nos EUA, Se ele estiver demorando para responder,Pode ser o ping! \n "
                     "---------------------------------\n"
-                    "UTILIZE OS SEGUINTES COMANDOS PARA CONTROLAR A MÚSICA:\n"
+                    "UTILIZE OS SEGUINTES COMANDOS PARA CONTROLAR A MÚSICA (VOCÊ DEVE ESTAR EM UM CANAL DE VOZ PARA "
+                    "QUE FUNCIONE):\n "
                     "'buscar: Procura no youtube a música a partir do que você digitar,\n"
-                    "EX:'buscar the best of beethoven,(Você também pode por um link).\n"
+                    "EX:'buscar the best of beethoven,(Você também pode pôr um link).\n"
                     "'pausar: Pausa a música.\n"
                     "'retomar: Retoma a música.\n "
                     "'parar: Para a música. \n"
@@ -75,7 +76,7 @@ async def ajuda(ctx):  # O COMANDO 'AJUDA LISTA OS COMANDOS DISPONÍVEIS.
                     "---------------------------------------------------------------\n "
                     "Algum comando quebrado? Escreva uma mensagem mencionando @DG2003 ;) \n"
                     "Dica: O Bot não vê diferença entre maiúsculo e MINÚSCULO;)!\n"
-                    "USE ' ANTES DE QUALQUER COMANDO!",
+                    "USE APÓSTROFO(') ANTES DE QUALQUER COMANDO!",
         colour=16753920
     )
     embed.set_thumbnail(url="https://media1.giphy.com/media/WoWm8YzFQJg5i/giphy.gif?cid"
@@ -130,7 +131,7 @@ async def regras(ctx):  # MOSTRA AS REGRAS DO SERVIDOR.
                     "MAS NINGUÉM TE DÁ ATENÇÃO, ESPERE, SPAMAR NÃO VAI FAZER COM QUE AS PESSOAS VEJAM O QUE VOCÊ QUER "
                     "MOSTRAR,APENAS VAI FAZER COM QUE ELAS TE ACHEM CHATO E INCOVENIENTE! VAI COM CALMA, AMIGÃO! \n"
                     "------------------------------------------------------- \n"
-                    "3- TENTE NÃO XINGAR🤬🤬🤬! EU SEI QUE AS VEZES É DIFICIL(ESPECIALMENTE PARA MIM😅😅😅) E "
+                    "3- TENTE NÃO XINGAR🤬🤬🤬! EU SEI QUE ÀS VEZES É DIFICIL(ESPECIALMENTE PARA MIM😅😅😅) E "
                     "QUE ESCAPA, "
                     "MAS É UMA BOA PRATICA!😄😄😄\n"
                     "------------------------------------------------------- \n"
@@ -195,7 +196,7 @@ async def hello(ctx):  # MANDA UMA PIADINHA COM HELLO WORLD KKKKKKK.
 @bot.command(aliases=["ver"])
 async def versão(ctx):
     embed = discord.Embed(
-        title="🤖 Versão: 17.12.21 \n"
+        title="🤖 Versão: 06.04.22 \n"
               "------------------------\n"
               "📑 Discord.py: 1.7.3 \n"
               "🎞️ FFMPEG: 4.4.1 \n"
@@ -264,9 +265,7 @@ async def buscar(ctx, *, search):  # BUSCA MÚSICA NO YOUTUBE.
             duração = info.get("duration", None)
             data = info.get("upload_date", None)
             visualizações = info.get("view_count", None)
-            gostei = info.get("like_count", None)
-            não_gostei = info.get("dislike_count", None)
-            du = str(duração / 60)
+            du = str(duração / 61.6)
             d = str(data)
 
         voz.play(FFmpegPCMAudio(url, **ffmpeg_opcs))
@@ -275,10 +274,7 @@ async def buscar(ctx, *, search):  # BUSCA MÚSICA NO YOUTUBE.
 
         embed = discord.Embed(
             title=f"🎶Tocando: {titulo}",
-            description=f"📅 Data: {d[6:8]}/{d[4:6]}/{d[0:4]}  \n"
-                        f"🕛 Duração: {du[0:1]}:{du[2:4]} Min/H \n"
-                        f"👁️ Visualizações: {visualizações} MIL/MI/BI \n "
-                        f"👍 Gostei: {gostei} M/MI/BI ➖ 👎 Não Gostei: {não_gostei} M/MI/BI ",
+            description=f"📅 Data: {d[6:8]}/{d[4:6]}/{d[0:4]} ------ 🕛 Duração: {du[0:1]}:{du[2:4]} Min",
             color=16753920
         )
         embed.set_image(url=capa)
@@ -332,7 +328,7 @@ async def retomar(ctx):  # RETOMA A MÚSICA.
         color=16753920
     )
     embed2 = discord.Embed(
-        title="🚫A música não está pausada.",
+        title="🚫A música não está pausada, Uma vez que foi removida da lista de reprodução através do comando 'parar.",
         color=16753920
 
     )
