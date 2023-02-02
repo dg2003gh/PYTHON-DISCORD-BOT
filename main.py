@@ -1,4 +1,4 @@
-# DG2003-BOT-06.04.22
+# DG2003-BOT-02.02.23
 
 # *IMPORTS*.
 import discord
@@ -13,7 +13,7 @@ from youtube_dl import YoutubeDL
 from discord.utils import get
 
 # *INTENTS*.
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.members = True
 
 # *PREFIX*.
@@ -196,11 +196,11 @@ async def hello(ctx):  # MANDA UMA PIADINHA COM HELLO WORLD KKKKKKK.
 @bot.command(aliases=["ver"])
 async def versão(ctx):
     embed = discord.Embed(
-        title="🤖 Versão: 06.04.22 \n"
+        title="🤖 Versão: 02.02.23 \n"
               "------------------------\n"
               "📑 Discord.py: 1.7.3 \n"
               "🎞️ FFMPEG: 4.4.1 \n"
-              "🐍 Python: 3.9.9 \n"
+              "🐍 Python: 3.10 \n"
               "📹 YTDL: 2021.12.17 \n",
         color=16753920
     )
@@ -211,7 +211,7 @@ async def versão(ctx):
 async def ping(ctx):
     embed = discord.Embed(
      title=f"🏓 Pong!🤣🤣 Desculpa... Não resisti! \n"
-           f"O Ping do servidor(EUA) está em {round(bot.latency * 1000)}ms!",
+           f"O Ping do servidor está em {round(bot.latency * 1000)}ms!",
      color=16753920
 
     )
