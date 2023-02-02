@@ -264,7 +264,7 @@ async def buscar(ctx, *, search):  # BUSCA MÚSICA NO YOUTUBE.
             capa = info.get("thumbnail", None)
             duração = info.get("duration", None)
             data = info.get("upload_date", None)
-            visualizações = info.get("view_count", None)
+            # visualizações = info.get("view_count", None)
             du = str(duração / 61.6)
             d = str(data)
 
@@ -373,4 +373,4 @@ async def sair(ctx):  # SAI DO CANAL DE VOZ.
 
 
 # *TOKEN DO BOT*
-bot.run("NzU3NDkxOTMxNjQyMjAwMTU1.X2hLVg.XlMkPRGMRCFpbGvy1BKpoj1OQOk")
+bot.run("MTA1MzIwMjM1Mzk1Nzg5NjMyMw.Gm9NEI.yH9XxvXsNWBmNwXbcr70m4D12uFxFyVz41Kqn0")
