@@ -1,0 +1,5 @@
+DISPLAY_NAME=DG2003-BOT
+DESCRIPTION=Um bot para o server DG2003.
+MAIN=main.py
+MEMORY=150
+VERSION=recommended
