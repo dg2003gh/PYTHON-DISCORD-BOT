@@ -1,3 +1,3 @@
 # python discord bot-17.12.21
 
-This bot was made in 2020 maybe early? I just code it for a personal server, it still works perfect becouse is a very basic bot and I'll do not change any single line of code then I can see what I made. YOU CAN USE IT BUT KEEP IN MIND THAT I DO NOT MAINTENCE IT! Oh, it play songs through ytdl, fantastic!
+Was this bot made in 2020, maybe early? I just coded it for a personal server, it still works flawlessly because it's a very basic bot and I'm not going to change a single line of code so I can see what I've done. YOU CAN USE IT, BUT REMEMBER I DON'T DO MAINTENANCE! Oh, it plays songs through ytdl, fantastic! Hum, it is in portuguese too.
