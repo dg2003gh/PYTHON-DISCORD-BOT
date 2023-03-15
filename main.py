@@ -373,4 +373,4 @@ async def sair(ctx):  # SAI DO CANAL DE VOZ.
 
 
 # *TOKEN DO BOT*
-bot.run("MTA1MzIwMjM1Mzk1Nzg5NjMyMw.Gm9NEI.yH9XxvXsNWBmNwXbcr70m4D12uFxFyVz41Kqn0")
+bot.run("")
