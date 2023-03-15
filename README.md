@@ -1,14 +1,3 @@
-# DG2003-BOT-17.12.21
-Um BOT para o servidor DG2003.
+# python discord bot-17.12.21
 
-
-Changelog:
-
-Versão: 17.12.21 (17 de dezembro de 2021) -
-
-Atualização dos pacotes para a última versão;
-correções ortográficas mínimas(espaço entre duas palavras que estavam juntas);
-pequenas alteraçoes no código;
-feliz.gif removido;
-
-Bugfixed: não estava reproduzindo a música pedida(ffmpeg estava dando problema).
+This bot was made in 2020 maybe early? I just code it for a personal server, it still works perfect becouse is a very basic bot and I'll do not change any single line of code then I can see what I made. YOU CAN USE IT BUT KEEP IN MIND THAT I DO NOT MAINTENCE IT! Oh, it play songs through ytdl, fantastic!
